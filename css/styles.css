@@ -1,3 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     text-decoration: underline;
+}
+
+.nav-item-end {
+    justify-self: flex-end;
+}
+
+.nav-item-top {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-item-top:hover {
+    border-bottom: 3px solid darkblue;
+}
+
+#blank-space-top {
+    height: 100px;
+    background-color: #FAFAFA;
+}
+
+#button-live {
+    align-self: flex-end;
+
+    border-radius: 8px;
+    padding: 10px 15px;
+    background: linear-gradient(#FF0000, #FF0000, #9a0521, #9a0521);
+    color: white;
+}
+
+#header-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    width: 100%;
+}
+
+#nav-top > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#title {
+    align-self: flex-end;
+}
+
+#weather {
+    justify-self: flex-end;
 }
