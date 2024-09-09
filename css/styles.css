@@ -10,6 +10,11 @@ body > header {
     width: 100%;
 }
 
+footer > section {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .nav-item-end {
     margin-left: auto;
 }
@@ -21,6 +26,19 @@ body > header {
 
 .nav-item-top:hover {
     border-bottom: 3px solid darkblue;
+}
+
+.social-link {
+    border-right: 1px solid black;
+    padding: 0 20px;
+}
+
+.social-link:last-of-type {
+    border-right: none;
+}
+
+.social-link:hover {
+
 }
 
 #blank-space-top {
@@ -64,6 +82,13 @@ body > header {
     display: flex;
     flex-direction: row;
 
+}
+
+#social-links {
+    display: flex;
+    flex-flow: row wrap;
+
+    font-size: 1.1em;
 }
 
 #title {
