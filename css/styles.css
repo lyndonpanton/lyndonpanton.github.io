@@ -1,19 +1,22 @@
+/* Find a custom font */
+
 body, html {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
-h1 {
-    text-decoration: underline;
+body > header {
+    width: 100%;
 }
 
 .nav-item-end {
-    justify-self: flex-end;
+    margin-left: auto;
 }
 
 .nav-item-top {
     list-style: none;
-    padding: 10px;
+    padding: 10px 10px 20px;
 }
 
 .nav-item-top:hover {
@@ -36,16 +39,31 @@ h1 {
 
 #header-top {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
 
-    width: 100%;
+    margin: 0 auto;
+    width: 65%;
+}
+
+#header-top-right {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#nav-top {
+    margin: 0 auto;
+    width: 65%;
+
+    font-size: 1.2em;
 }
 
 #nav-top > ul {
     display: flex;
     flex-direction: row;
+
 }
 
 #title {
