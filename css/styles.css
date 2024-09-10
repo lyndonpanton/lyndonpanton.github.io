@@ -19,6 +19,10 @@ footer > section {
     margin: 0 auto;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .internal-link-list-item {
     margin: 20px 0;
     font-size: 1.1em;
