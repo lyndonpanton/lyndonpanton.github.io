@@ -34,8 +34,9 @@ footer > section {
 }
 
 .nav-item-top {
-    list-style: none;
+    border-bottom: 3px transparent solid;
     padding: 10px 10px 20px;
+    list-style: none;
 }
 
 .nav-item-top:hover {
