@@ -65,6 +65,14 @@ footer > section {
     color: white;
 }
 
+#copyright {
+    display: flex;
+}
+
+#copyright p {
+    margin-right: 25px;
+}
+
 #header-top {
     display: flex;
     flex-flow: row wrap;
@@ -89,6 +97,16 @@ footer > section {
 
 #internal-links > section {
     margin-right: 150px;
+}
+
+#legal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#legal p {
+    margin-right: 45px;
 }
 
 #nav-top {
