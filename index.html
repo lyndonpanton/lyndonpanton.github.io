@@ -26,7 +26,13 @@
                 </div>
                 <div id="header-top-right">
                     <div id="weather">
-                        6th Sep | 15&deg; – 20&deg; {Use cloud icon}{Use weather API}
+
+                        <div id="weather-date">{ date }</div>
+                        <i id="weather-icon" class="fa-solid fa-cloud"></i>
+                        <div id="weather-temperatures">
+                            <p class="weather-temperature">{ temp high }&deg;</p>
+                            <p class="weather-temperature">{ temp low }&deg;</p>
+                        </div>
                     </div>
                     <button id="button-live">Watch Live</button>
                 </div>

@@ -82,6 +82,10 @@ footer > section {
     border-right: none;
 }
 
+.weather-temperature {
+    margin: 0;
+}
+
 #dropdown-icon {
     color: #3B3B3B;
     font-size: 14px;
@@ -183,4 +187,18 @@ footer > section {
 
 #weather {
     justify-self: flex-end;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#weather > * {
+    margin: 0 4px;
+}
+
+#weather-temperatures {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
 }
