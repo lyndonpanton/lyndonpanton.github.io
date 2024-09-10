@@ -37,6 +37,10 @@ footer > section {
     list-style-type: none;
 }
 
+.legal-item:hover {
+    text-decoration: underline;
+}
+
 .nav-item-end {
     margin-left: auto;
 }
