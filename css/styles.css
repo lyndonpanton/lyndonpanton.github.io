@@ -11,6 +11,9 @@ body > header {
 }
 
 body > main {
+    margin: 0 auto;
+    width: 65%;
+
     background-color: #F8F8F8;
 }
 
@@ -39,6 +42,10 @@ footer > section {
 
 .legal-item:hover {
     text-decoration: underline;
+}
+
+.main-section-heading {
+    text-transform: uppercase;
 }
 
 .nav-item-end {
@@ -165,6 +172,7 @@ footer > section {
 }
 
 #nav-top-more {
+    position: relative;
     margin-top: 0;
     margin-left: 80%;
     border: 1px solid #E1E1E1;
