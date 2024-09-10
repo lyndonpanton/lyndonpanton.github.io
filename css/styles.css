@@ -116,10 +116,13 @@ footer > section {
     font-size: 1.2em;
 }
 
-#nav-top > ul {
+#nav-top-main {
     display: flex;
     flex-direction: row;
+}
 
+#nav-top-more {
+    margin-left: 20px;
 }
 
 #social-links {
