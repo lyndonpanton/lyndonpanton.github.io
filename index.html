@@ -30,8 +30,14 @@
                         <div id="weather-date">{ date }</div>
                         <i id="weather-icon" class="fa-solid fa-cloud"></i>
                         <div id="weather-temperatures">
-                            <p class="weather-temperature">{ temp high }&deg;</p>
-                            <p class="weather-temperature">{ temp low }&deg;</p>
+                            <p id="weather-temperature-high"
+                               class="weather-temperature">
+                                { temp high }&deg;
+                            </p>
+                            <p id="weather-temperature-low"
+                               class="weather-temperature">
+                                { temp low }&deg;
+                            </p>
                         </div>
                     </div>
                     <button id="button-live">Watch Live</button>
@@ -108,13 +114,13 @@
         </main>
         <footer>
             <section id="social-links">
-                <i class="fa-brands fa-youtube social-link"></i>
-                <i class="fa-brands fa-facebook-f social-link"></i>
-                <i class="fa-brands fa-x-twitter social-link"></i>
-                <i class="fa-brands fa-tiktok social-link"></i>
-                <i class="fa-brands fa-instagram social-link"></i>
-                <i class="fa-brands fa-linkedin-in social-link"></i>
-                <i class="fa-brands fa-whatsapp social-link"></i>
+                <i id="social-link-youtube" class="fa-brands fa-youtube social-link"></i>
+                <i id="social-link-facebook" class="fa-brands fa-facebook-f social-link"></i>
+                <i id="social-link-x" class="fa-brands fa-x-twitter social-link"></i>
+                <i id="social-link-tiktok" class="fa-brands fa-tiktok social-link"></i>
+                <i id="social-link-instagram" class="fa-brands fa-instagram social-link"></i>
+                <i id="social-link-linkedin" class="fa-brands fa-linkedin-in social-link"></i>
+                <i id="social-link-whatsapp" class="fa-brands fa-whatsapp social-link"></i>
             </section>
 
             <section id="internal-links">
