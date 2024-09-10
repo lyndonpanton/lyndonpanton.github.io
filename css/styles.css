@@ -74,6 +74,11 @@ footer > section {
     border-right: none;
 }
 
+#dropdown-icon {
+    color: #3B3B3B;
+    font-size: 14px;
+}
+
 #blank-space-top {
     height: 100px;
     background-color: #FAFAFA;
