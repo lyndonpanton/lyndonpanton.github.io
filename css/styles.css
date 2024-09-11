@@ -23,7 +23,9 @@ footer > section {
 .analysis-card {
     flex-basis: 100%;
 
+    box-sizing: border-box;
     margin: auto 15px;
+    padding: 15px 25px;
     height: 320px;
 }
 
@@ -36,6 +38,7 @@ footer > section {
 }
 
 .analysis-card-author {
+    margin: 20px 0 0;
     text-align: center;
     font-size: 0.9em;
     color: #4267B2;
@@ -46,11 +49,14 @@ footer > section {
 }
 
 .analysis-card-description {
-
+    text-align: center;
+    font-size: 1.2em;
 }
 
-.analysis-card-title {
-
+.analysis-card-profile {
+    display: block;
+    margin: 8px auto;
+    border-radius: 50%;
 }
 
 .article-card {
