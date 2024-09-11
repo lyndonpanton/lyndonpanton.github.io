@@ -20,9 +20,52 @@ footer > section {
     margin: 0 auto;
 }
 
+.analysis-card {
+    flex-basis: 100%;
+
+    margin: auto 15px;
+    height: 320px;
+}
+
+.analysis-card:first-of-type {
+    margin-left: 0;
+}
+
+.analysis-card:last-of-type {
+    margin-right: 0;
+}
+
+.analysis-card-author {
+    text-align: center;
+    font-size: 0.9em;
+    color: #4267B2;
+}
+
+.analysis-card-author:hover {
+    text-decoration: underline;
+}
+
+.analysis-card-description {
+
+}
+
+.analysis-card-title {
+
+}
+
 .article-card {
     border: 4px solid #EAEAEA;
+    box-shadow: 0 0 10px #EAEAEA;
     background-color: white;
+}
+
+.fake-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.fake-link::selection {
+    background-color: transparent;
 }
 
 .feature-article {
@@ -146,9 +189,9 @@ footer > section {
     margin: 0;
 }
 
-#dropdown-icon {
-    color: #3B3B3B;
-    font-size: 14px;
+#analysis-articles {
+    display: flex;
+    justify-content: space-between;
 }
 
 #blank-space-top {
@@ -171,6 +214,11 @@ footer > section {
 
 #copyright p {
     margin-right: 25px;
+}
+
+#dropdown-icon {
+    color: #3B3B3B;
+    font-size: 14px;
 }
 
 #feature-articles {
