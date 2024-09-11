@@ -25,6 +25,34 @@ footer > section {
     background-color: white;
 }
 
+.feature-article {
+    flex-basis: 30%;
+
+    margin: auto 15px;
+    height: 340px;
+    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-article:first-of-type {
+    margin-left: 0;
+}
+
+.feature-article:last-of-type {
+    margin-right: 0;
+}
+
+.feature-article > h3 {
+    position: relative;
+    top: 192px;
+
+    box-sizing: border-box;
+    height: 130px;
+    padding: 20px;
+    background-color: white;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -143,6 +171,15 @@ footer > section {
 
 #copyright p {
     margin-right: 25px;
+}
+
+#feature-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 45px 0;
+    padding: 0;
 }
 
 #header-top {
