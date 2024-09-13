@@ -13,11 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Get the current date (and time?)
+    // Get the current date and time
 
     // Get the current weather
 
-    // Load more articles
+    // Use an API to get random articles
+
     function loadMoreArticles(button) {
         let nextArticles = button.parentElement.nextElementSibling;
 
