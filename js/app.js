@@ -18,3 +18,23 @@ document.addEventListener("DOMContentLoaded", function() {
         moreDropdownIcon.classList.toggle("fa-angle-up");
     }
 });
+
+/* Cards format types
+    - Live: Red
+    - Breaking: Yellow
+    - Eyewitness: Blue
+    - Analysis: Magenta
+    - Podcast: Cyan
+    - Explainer: Green
+ */
+
+/*
+Card category types
+    - World
+    - UK
+    - US
+    - Business
+    - Science & Tech
+    - Climate
+    - Politics
+ */
