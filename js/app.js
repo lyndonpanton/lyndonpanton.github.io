@@ -6,9 +6,28 @@ document.addEventListener("DOMContentLoaded", function() {
         moreListItem.getElementsByClassName("fa-angle-down")[0];
     moreListItem.addEventListener("click", toggleMoreDropdown);
 
+    const loadMoreButtons = document.getElementsByClassName("button-load-more");
+    for (let i = 0; i < loadMoreButtons.length; i++) {
+        loadMoreButtons[i].addEventListener("click", function() {
+            loadMoreArticles(this);
+        });
+    }
+
     // Get the current date (and time?)
 
     // Get the current weather
+
+    // Load more articles
+    function loadMoreArticles(button) {
+        let nextArticles = button.parentElement.nextElementSibling;
+
+        if (
+            nextArticles !== undefined
+            && nextArticles.classList.contains("hidden")
+        ) {
+            nextArticles.classList.remove("hidden");
+        }
+    }
 
     // Change to toggle using rotation instead of an immediate change
     // Edit the fontawesome CSS classes and use transitions to achieve this

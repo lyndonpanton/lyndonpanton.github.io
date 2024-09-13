@@ -147,7 +147,7 @@ footer > section {
 
     box-sizing: border-box;
     margin: auto 15px;
-    height: 320px;
+    height: 350px;
 }
 
 .election-article:first-of-type {
@@ -166,16 +166,28 @@ footer > section {
     background-position: center;
 }
 
+.election-article-category {
+    color: darkblue;
+}
+
 .election-article-content {
+    margin: 0 10px;
     padding: 25px 10px;
+}
+
+.election-article-content > * {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.election-article-description {
+    font-size: 1.2em;
 }
 
 .election-article-tags {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-
-    margin: 0 10px;
 }
 
 .election-article-tags > * {
