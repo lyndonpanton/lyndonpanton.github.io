@@ -59,6 +59,34 @@ footer > section {
     border-radius: 50%;
 }
 
+.around-article {
+    flex-basis: 30%;
+
+    margin: auto 15px;
+    height: 340px;
+    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
+    background-size: cover;
+    background-position: center;
+}
+
+.around-article:first-of-type {
+    margin-left: 0;
+}
+
+.around-article:last-of-type {
+    margin-right: 0;
+}
+
+.around-article > h3 {
+    position: relative;
+    top: 192px;
+
+    box-sizing: border-box;
+    height: 130px;
+    padding: 20px;
+    background-color: white;
+}
+
 .article-card {
     border: 4px solid #EAEAEA;
     box-shadow: 0 0 10px #EAEAEA;
@@ -198,6 +226,15 @@ footer > section {
 #analysis-articles {
     display: flex;
     justify-content: space-between;
+}
+
+#around-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 45px 0;
+    padding: 0;
 }
 
 #blank-space-top {
