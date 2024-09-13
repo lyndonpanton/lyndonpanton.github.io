@@ -93,6 +93,48 @@ footer > section {
     background-color: white;
 }
 
+.analysis-card:first-of-type {
+    margin-left: 0;
+}
+
+.analysis-card:last-of-type {
+    margin-right: 0;
+}
+
+.analysis-card-author {
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: #4267B2;
+}
+
+.button-load-more {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #4267B2;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #4267B2;
+}
+
+.election-article {
+    flex-basis: 100%;
+
+    box-sizing: border-box;
+    margin: auto 15px;
+    height: 320px;
+}
+
+.election-article-image {
+    width: 100%;
+    height: 45%;
+    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
+    background-size: cover;
+    background-position: center;
+}
+
 .fake-link:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -217,6 +259,15 @@ footer > section {
 
 .social-link:last-of-type {
     border-right: none;
+}
+
+.stories-elections-articles-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 45px 0;
+    padding: 0;
 }
 
 .weather-temperature {
@@ -439,6 +490,27 @@ footer > section {
     transition: color 0.5s;
 
     color: #FF0000;
+}
+
+#stories-top {
+    display: grid;
+    grid-template-areas:
+        "highlight highlight highlight other"
+        "other other other other"
+        "other other other other";
+    /* Defines the height of each row */
+    grid-template-rows: 300px 300px 300px;
+    /* Defines the width of each column */
+    grid-template-columns: 400px 400px 400px 400px;
+
+    width: 100%;
+    height: 300px;
+}
+
+#stories-top-highlight-article {
+    grid-area: highlight;
+
+    background-color: blue;
 }
 
 #title {
