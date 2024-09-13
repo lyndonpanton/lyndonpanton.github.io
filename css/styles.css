@@ -137,6 +137,11 @@ footer > section {
     color: #4267B2;
 }
 
+.button-load-more:hover {
+    background-color: #4267B2;
+    color: white;
+}
+
 .election-article {
     flex-basis: 100%;
 
@@ -215,7 +220,7 @@ footer > section {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .internal-link-list-item {
