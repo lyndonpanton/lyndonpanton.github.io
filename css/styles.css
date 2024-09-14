@@ -1,9 +1,11 @@
-/* Find a custom font */
-
 body, html {
     margin: 0;
     padding: 0;
+    font-family: "SUSE", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
 }
 
 body > header {
@@ -221,14 +223,16 @@ footer > section {
     margin-right: 0;
 }
 
-.feature-article > h3 {
+.feature-article > p {
     position: relative;
-    top: 192px;
+    top: 191px;
 
     box-sizing: border-box;
     height: 130px;
-    padding: 20px;
+    padding: 30px;
     background-color: white;
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .hidden {
@@ -327,6 +331,43 @@ footer > section {
 
     margin: 45px 0;
     padding: 0;
+}
+
+.stories-more-article {
+    /*max-width: 350px;*/
+    height: 350px;
+}
+
+.stories-more-article-image {
+    width: 100%;
+    height: 45%;
+    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
+    background-size: cover;
+    background-position: center;
+}
+
+.stories-more-article-content {
+    margin: 0 10px;
+    padding: 25px 10px;
+}
+
+.stories-more-article-content > * {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.stories-more-article-description {
+    font-size: 1.2em;
+}
+
+.stories-more-article-tags {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.stories-more-article-tags > * {
+    margin: 0 5px;
 }
 
 .weather-temperature {
@@ -549,6 +590,15 @@ footer > section {
     transition: color 0.5s;
 
     color: #FF0000;
+}
+
+#stories-more-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 25px;
+    grid-column-gap: 15px;
+
+    padding: 20px 0;
 }
 
 #stories-top {
