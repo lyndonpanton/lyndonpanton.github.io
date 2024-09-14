@@ -135,6 +135,7 @@ footer > section {
     border-radius: 5px;
     background-color: transparent;
     padding: 10px 20px;
+    font-family: inherit;
     font-size: 1.1em;
     color: #4267B2;
 }
@@ -142,6 +143,67 @@ footer > section {
 .button-load-more:hover {
     background-color: #4267B2;
     color: white;
+}
+
+.climate-article {
+    flex-basis: 100%;
+
+    box-sizing: border-box;
+    margin: auto 15px;
+    height: 350px;
+}
+
+.climate-article:first-of-type {
+    margin-left: 0;
+}
+
+.climate-article:last-of-type {
+    margin-right: 0;
+}
+
+.climate-article-image {
+    width: 100%;
+    height: 45%;
+    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
+    background-size: cover;
+    background-position: center;
+}
+
+.climate-article-category {
+    color: darkblue;
+}
+
+.climate-article-content {
+    margin: 0 10px;
+    padding: 25px 10px;
+}
+
+.climate-article-content > * {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.climate-article-description {
+    font-size: 1.2em;
+}
+
+.climate-articles-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 45px 0;
+    padding: 0;
+}
+
+.climate-article-tags {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.climate-article-tags > * {
+    margin: 0 5px;
 }
 
 .election-article {
@@ -334,7 +396,6 @@ footer > section {
 }
 
 .stories-more-article {
-    /*max-width: 350px;*/
     height: 350px;
 }
 
