@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function loadMoreArticles(button) {
         let nextArticles = button.parentElement.nextElementSibling;
+        button.remove();
 
         if (
             nextArticles !== undefined
