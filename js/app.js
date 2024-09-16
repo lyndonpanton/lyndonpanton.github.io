@@ -49,8 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     - Explainer: Green
  */
 
-/*
-Card category types
+/* Card category types
     - World
     - UK
     - US
@@ -60,4 +59,11 @@ Card category types
     - Politics
 
     7	5	4	5
+ */
+
+/* Animals
+    - Bird
+    - Tortoise
+    - Brown bear
+    - Komodo dragon
  */
