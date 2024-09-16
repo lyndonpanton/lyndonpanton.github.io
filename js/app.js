@@ -111,8 +111,6 @@ document.addEventListener("DOMContentLoaded", function() {
     - Science & Tech
     - Climate
     - Politics
-
-    7	5	4	5
  */
 
 /* Animals

@@ -218,7 +218,7 @@ footer > section {
 }
 
 .climate-article-tags > * {
-    margin: 0 5px;
+    margin: 0 0 0 5px;
 }
 
 .election-article {
@@ -247,6 +247,7 @@ footer > section {
 
 .election-article-category {
     color: darkblue;
+    font-size: 0.9em;
 }
 
 .election-article-content {
@@ -448,7 +449,7 @@ footer > section {
 }
 
 .stories-more-article-tags > * {
-    margin: 0 5px;
+    margin: 0 0 0 5px;
 }
 
 .videos-list-group {
