@@ -128,6 +128,21 @@ footer > section {
     color: black !important;
 }
 
+.article-video {
+    cursor: pointer;
+
+    padding-top: 15px;
+}
+
+.article-video-clip {
+    width: 240px;
+    height: 135px;
+}
+
+.article-video-description {
+
+}
+
 .button-load-more {
     display: block;
     margin: 0 auto;
@@ -431,6 +446,33 @@ footer > section {
     margin: 0 5px;
 }
 
+.videos-list-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+.videos-tab-link {
+    list-style-type: none;
+
+    margin: 0 20px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.videos-tab-link:first-of-type {
+    margin-left: 0;
+}
+
+.videos-tab-link:last-of-type {
+    margin-right: 0;
+}
+
+/* Selected tab: underlined, bold */
+
 .weather-temperature {
     margin: 0;
 }
@@ -685,6 +727,25 @@ footer > section {
 
 #title {
     align-self: flex-end;
+}
+
+#videos {
+    padding: 20px 0 20px 25px;
+    background-color: #0077B5;
+    color: white;
+}
+
+#videos-list {
+    padding-right: 25px;
+}
+
+#videos-tabs {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    border-bottom: 2px solid #848484;
+    padding: 0;
 }
 
 #weather {
