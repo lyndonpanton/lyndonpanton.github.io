@@ -47,18 +47,28 @@ document.addEventListener("DOMContentLoaded", function() {
                     #videos-list-explainers
                     #videos-list-interviews
          */
+        let selectedTabIndex;
 
         for (let i = 0; i < videosTabs.length; i++) {
             if (videosTabs[i] === tab) {
                 videosTabs[i].classList.add("videos-tab-selected");
+                selectedTabIndex = i;
             } else {
                 videosTabs[i].classList.remove("videos-tab-selected");
             }
         }
 
-        // Get the index of the tab pressed in its parent (#videos-tabs)
-        // Get the next sibling of the parent (#videos-list)
-        // Loop through all children of #videos-list
+        let videoGroups = tab.parentElement.nextElementSibling.children;
+        console.log(videoGroups);
+
+        for (let i = 0; i < videoGroups.length; i++) {
+            if (selectedTabIndex === i) {
+                videoGroups[i].style.display = "flex";
+            } else {
+                videoGroups[i].style.display = "none";
+            }
+        }
+
         // Use the index to make the relevant section visible
         // Make the other sections invisible
     }
