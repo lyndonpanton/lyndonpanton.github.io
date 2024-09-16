@@ -471,6 +471,11 @@ footer > section {
     margin-right: 0;
 }
 
+.videos-tab-selected {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
 /* Selected tab: underlined, bold */
 
 .weather-temperature {
