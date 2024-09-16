@@ -24,16 +24,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let i = 0; i < invisible.length; i++) {
         invisible[i].style.display = "none";
-        // invisible[i].classList.add("invisible");
     }
 
-    // Get the current date and time
     let date = document.getElementById("weather-date");
     setTime(date);
-
-    // Get the current weather
-
-    // Use an API to get random articles
+    let temperatureMinimum =
+        document.getElementById("weather-temperature-low");
+    let temperatureMaximum =
+        document.getElementById("weather-temperature-high");
+    setTemperature(temperatureMinimum, temperatureMaximum);
 
     function changeVideosTab(tab) {
         let selectedTabIndex;
@@ -57,11 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 videoGroups[i].style.display = "none";
             }
         }
-
-        // Use the index to make the relevant section visible
-        // Make the other sections invisible
     }
 
+    // Use an API to get random articles
     function loadMoreArticles(button) {
         let nextArticles = button.parentElement.nextElementSibling;
         button.remove();
@@ -101,6 +98,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 case 12:
                     return "Dec";
         }
+    }
+
+    function setTemperature(minimumElement, maximumElement) {
+        // max temp should be at least 3 degrees more than the minimum
+
+        // Use an API to get the current temperature recordings in a particular
+        // region
+        let minimumTemperature = Math.floor((Math.random() * 15 + 6));
+        let maximumTemperature =
+            minimumTemperature + Math.floor((Math.random() * 3 + 4));
+
+        minimumElement.textContent = minimumTemperature + "°";
+        maximumElement.textContent = maximumTemperature + "°";
     }
 
     function setTime(element) {

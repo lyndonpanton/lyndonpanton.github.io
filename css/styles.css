@@ -775,9 +775,3 @@ footer > section {
 #weather > * {
     margin: 0 4px;
 }
-
-#weather-temperatures {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-}
