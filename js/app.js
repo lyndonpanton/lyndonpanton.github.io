@@ -28,25 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Get the current date and time
+    let date = document.getElementById("weather-date");
+    setTime(date);
 
     // Get the current weather
 
     // Use an API to get random articles
 
     function changeVideosTab(tab) {
-        /*
-            #videos-content
-                #videos-tabs
-                    .videos-tab-link
-                #videos-list
-                    #videos-list-latest
-                        article.article-video
-                        // ...
-                    #videos-list-elections
-                    #videos-list-conflicts
-                    #videos-list-explainers
-                    #videos-list-interviews
-         */
         let selectedTabIndex;
 
         for (let i = 0; i < videosTabs.length; i++) {
@@ -83,6 +72,43 @@ document.addEventListener("DOMContentLoaded", function() {
         ) {
             nextArticles.classList.remove("hidden");
         }
+    }
+
+    function monthToText(number) {
+        switch (number) {
+            case 1:
+                return "Jan";
+                case 2:
+                    return "Feb";
+                case 3:
+                    return "Mar";
+                case 4:
+                    return "Apr";
+                case 5:
+                    return "May";
+                case 6:
+                    return "Jun";
+                case 7:
+                    return "Jul";
+                case 8:
+                    return "Aug";
+                case 9:
+                    return "Sep";
+                case 10:
+                    return "Oct";
+                case 11:
+                    return "Nov";
+                case 12:
+                    return "Dec";
+        }
+    }
+
+    function setTime(element) {
+        let date = new Date();
+        element.textContent =
+            date.getDate()
+            + " "
+            + monthToText(date.getMonth() + 1);
     }
 
     // Change to toggle using rotation instead of an immediate change
