@@ -457,6 +457,48 @@ footer > section {
     margin: 0 0 0 5px;
 }
 
+.stories-top-article {
+    box-sizing: border-box;
+
+    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
+    background-size: cover;
+    background-position: center;
+    height: 340px;
+}
+
+.stories-top-article-category {
+    color: darkblue;
+    font-size: 0.9em;
+}
+
+.stories-top-article-content {
+    position: relative;
+    top: 142px;
+
+    box-sizing: border-box;
+    padding: 20px;
+    height: 190px;
+    /*width: 100%;*/
+    background-color: white;
+}
+
+.stories-top-article-description {
+    font-size: 1.2em;
+}
+
+.stories-top-article-tags {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
+}
+
+.stories-top-article-tags > * {
+    margin: 0 5px;
+}
+
 .videos-list-group {
     display: flex;
     flex-flow: row nowrap;
@@ -720,25 +762,28 @@ footer > section {
     padding: 20px 0;
 }
 
-#stories-top {
-    display: grid;
-    grid-template-areas:
-        "highlight highlight highlight other"
-        "other other other other"
-        "other other other other";
-    /* Defines the height of each row */
-    grid-template-rows: 300px 300px 300px;
-    /* Defines the width of each column */
-    grid-template-columns: 400px 400px 400px 400px;
-
-    width: 100%;
-    height: 300px;
-}
-
 #stories-top-highlight-article {
     grid-area: highlight;
 
     background-color: blue;
+}
+
+#stories-top-main {
+    display: grid;
+    /*grid-template-areas:*/
+    /*    "primary primary primary secondary";*/
+    grid-template-columns: 3fr 1fr;
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+    /*padding: 20px 0;*/
+}
+
+#stories-top-primary {
+
+}
+
+#stories-top-secondary {
+
 }
 
 #title {
