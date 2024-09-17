@@ -105,6 +105,10 @@ footer > section {
     color: white;
 }
 
+.article-tag-black {
+    background-color: black;
+}
+
 .article-tag-blue {
     background-color: blue;
 }
@@ -286,6 +290,11 @@ footer > section {
 
 .fake-link::selection {
     background-color: transparent;
+}
+
+.fake-link-main {
+    color: black !important;
+    font-weight: bold;
 }
 
 .feature-article {
@@ -753,6 +762,10 @@ footer > section {
     color: #FF0000;
 }
 
+#stories-top-primary-article-description {
+    font-size: 1.5em;
+}
+
 #stories-top-primary-article-image {
     background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
     background-size: 100%;
@@ -766,11 +779,6 @@ footer > section {
     transition: background-size 0.25s;
     background-size: 110%;
 }
-
-/*#stories-top-primary-article-image:hover {*/
-/*    transition: background-size 0.25s;*/
-/*    background-size: 110%;*/
-/*}*/
 
 #stories-more-articles {
     display: grid;
@@ -799,9 +807,15 @@ footer > section {
 
 #stories-top-primary {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 
     height: 340px;
+}
+
+#stories-top-primary-article-content {
+    /*margin-top: 25px;*/
+    padding: 30px 25px;
+    background-image: linear-gradient(180deg, yellow, #ea8424);
 }
 
 #stories-top-secondary {
