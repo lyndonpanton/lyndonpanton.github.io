@@ -753,6 +753,25 @@ footer > section {
     color: #FF0000;
 }
 
+#stories-top-primary-article-image {
+    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
+    background-size: 100%;
+    background-position: center;
+    background-clip: border-box;
+
+    transition: background-size 0.25s;
+}
+
+#stories-top-primary:hover > #stories-top-primary-article-image {
+    transition: background-size 0.25s;
+    background-size: 110%;
+}
+
+/*#stories-top-primary-article-image:hover {*/
+/*    transition: background-size 0.25s;*/
+/*    background-size: 110%;*/
+/*}*/
+
 #stories-more-articles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -779,7 +798,10 @@ footer > section {
 }
 
 #stories-top-primary {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 
+    height: 340px;
 }
 
 #stories-top-secondary {
