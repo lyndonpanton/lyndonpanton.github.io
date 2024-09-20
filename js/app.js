@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("weather-temperature-high");
     setTemperature(temperatureMinimum, temperatureMaximum);
 
+    // getWeather();
+
     function changeVideosTab(tab) {
         let selectedTabIndex;
 
@@ -56,6 +58,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 videoGroups[i].style.display = "none";
             }
         }
+    }
+
+    function getWeather() {
+        // let weatherData =
+        //     fetch("api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=dd71fabe4a086c73df8e1e9175fe315f");
+        // weatherData
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         console.log(data);
+        //     });
     }
 
     // Use an API to get random articles
