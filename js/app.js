@@ -32,9 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("weather-temperature-low");
     let temperatureMaximum =
         document.getElementById("weather-temperature-high");
-    setTemperature(temperatureMinimum, temperatureMaximum);
 
     getWeather();
+    
+    setArticleImages();
+    setTemperature(temperatureMinimum, temperatureMaximum);
 
     function changeVideosTab(tab) {
         let selectedTabIndex;
@@ -58,6 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 videoGroups[i].style.display = "none";
             }
         }
+    }
+    
+    function getRandomArticleImage() {
+        let image;
+        fetch("https://api.unsplash.com/photos/random?client_id=0oQ2Z0zwJUIn5eqNLJWRESad5k5-bnIFdN_K74FjkfA")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.urls.regular);
+                image = data.urls.regular;
+            });
+        return image;
     }
 
     function getWeather() {
@@ -104,6 +117,22 @@ document.addEventListener("DOMContentLoaded", function() {
                 case 12:
                     return "Dec";
         }
+    }
+    
+    function setArticleImages() {
+        // All image elements should have a specific class name
+        let articleCards = document.getElementsByClassName("article-card");
+        let articleCard = articleCards[0];
+        let imageElement = articleCard.firstChild;
+        imageElement.src = getRandomArticleImage();
+
+        // Loop over all image elements
+        // for (let i = 0; i < articleCards.length; i++) {
+        //     let imageElement = articleCards[i].firstChild;
+        //     imageElement.src = getRandomArticleImage();
+        // }
+        // Use getArticleImage to get the image
+        // Set the image as the article's background url
     }
 
     function setTemperature(minimumElement, maximumElement) {
