@@ -137,6 +137,9 @@ document.addEventListener("DOMContentLoaded", function() {
     - Analysis: Magenta
     - Podcast: Cyan
     - Explainer: Green
+
+    3	6	4	3
+    1	4	5	2
  */
 
 /* Card category types
@@ -147,6 +150,9 @@ document.addEventListener("DOMContentLoaded", function() {
     - Science & Tech
     - Climate
     - Politics
+
+    1	3	5	6
+    6	7	3	2
  */
 
 /* Animals
