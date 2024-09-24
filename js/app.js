@@ -147,9 +147,9 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(data => {
                 let temperatureElements = document.getElementsByClassName("weather-temperature");
                 temperatureElements[0].textContent =
-                    Math.floor(data["main"]["temp_min"]) + "°";
-                temperatureElements[1].textContent =
                     Math.floor(data["main"]["temp_max"]) + "°";
+                temperatureElements[1].textContent =
+                    Math.floor(data["main"]["temp_min"]) + "°";
             });
     }
 
