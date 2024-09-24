@@ -33,9 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let temperatureMaximum =
         document.getElementById("weather-temperature-high");
 
-    getWeather();
-    
-    setArticleImages();
+    setWeather();
+    setRandomArticleImages();
     setTemperature(temperatureMinimum, temperatureMaximum);
 
     function changeVideosTab(tab) {
@@ -119,20 +118,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    function setArticleImages() {
+    function setRandomArticleImages() {
         // All image elements should have a specific class name
         let articleCards = document.getElementsByClassName("article-card");
         let articleCard = articleCards[0];
         let imageElement = articleCard.firstChild;
-        imageElement.src = getRandomArticleImage();
+        let randomArticleImage = getRandomArticleImage();
+        imageElement.src = randomArticleImage;
+        console.log(randomArticleImage);
 
         // Loop over all image elements
         // for (let i = 0; i < articleCards.length; i++) {
+        //     // Use getArticleImage to get the image
         //     let imageElement = articleCards[i].firstChild;
+        //     // Set the image as the article's background url
         //     imageElement.src = getRandomArticleImage();
         // }
-        // Use getArticleImage to get the image
-        // Set the image as the article's background url
     }
 
     function setTemperature(minimumElement, maximumElement) {
@@ -154,6 +155,15 @@ document.addEventListener("DOMContentLoaded", function() {
             date.getDate()
             + " "
             + monthToText(date.getMonth() + 1);
+    }
+
+    function setWeather() {
+        fetch("https://api.openweathermap.org/data/2.5/weather?lat=51.600349&lon=0.019800&appid=938c18d749049bb86f26fddf506aebf3&units=metric")
+            .then(response => response.json())
+            .then(data => {
+                console.log("Minimum temperature: " + data["main"]["temp_min"]);
+                console.log("Maximum temperature: " + data["main"]["temp_max"]);
+        });
     }
 
     // Change to toggle using rotation instead of an immediate change
