@@ -34,8 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("weather-temperature-high");
 
     setWeather();
-    setRandomArticleImages();
-    setTemperature(temperatureMinimum, temperatureMaximum);
+    // setRandomArticleImages();
 
     function changeVideosTab(tab) {
         let selectedTabIndex;
@@ -70,10 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 image = data.urls.regular;
             });
         return image;
-    }
-
-    function getWeather() {
-        
     }
 
     // Use an API to get random articles
@@ -136,19 +131,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // }
     }
 
-    function setTemperature(minimumElement, maximumElement) {
-        // max temp should be at least 3 degrees more than the minimum
-
-        // Use an API to get the current temperature recordings in a particular
-        // region
-        let minimumTemperature = Math.floor((Math.random() * 15 + 6));
-        let maximumTemperature =
-            minimumTemperature + Math.floor((Math.random() * 3 + 4));
-
-        minimumElement.textContent = minimumTemperature + "°";
-        maximumElement.textContent = maximumTemperature + "°";
-    }
-
     function setTime(element) {
         let date = new Date();
         element.textContent =
@@ -158,12 +140,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function setWeather() {
-        fetch("https://api.openweathermap.org/data/2.5/weather?lat=51.600349&lon=0.019800&appid=938c18d749049bb86f26fddf506aebf3&units=metric")
+        let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat=51.600349&lon=0.019800&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
+
+        request
             .then(response => response.json())
             .then(data => {
-                console.log("Minimum temperature: " + data["main"]["temp_min"]);
-                console.log("Maximum temperature: " + data["main"]["temp_max"]);
-        });
+                let temperatureElements = document.getElementsByClassName("weather-temperature");
+                temperatureElements[0].textContent =
+                    Math.floor(data["main"]["temp_min"]) + "°";
+                temperatureElements[1].textContent =
+                    Math.floor(data["main"]["temp_max"]) + "°";
+            });
     }
 
     // Change to toggle using rotation instead of an immediate change
