@@ -60,11 +60,40 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    function getCurrentPosition(position) {
+    function geoLocationAccepted(position) {
         let latitude = position.coords.latitude;
         let longitude = position.coords.longitude;
 
-        return [latitude, longitude];
+        let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat="
+            + latitude + "&lon=" + longitude
+            + "&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
+
+        request
+            .then(response => response.json())
+            .then(data => {
+                console.log("Using “" + data["name"] + "” for weather data");
+                let temperatureElements = document.getElementsByClassName("weather-temperature");
+                temperatureElements[0].textContent =
+                    Math.floor(data["main"]["temp_max"]) + "°";
+                temperatureElements[1].textContent =
+                    Math.floor(data["main"]["temp_min"]) + "°";
+            });
+    }
+
+    function geoLocationBlocked() {
+        // Geolocation permission blocked or browser does not have the feature
+        let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat=29.431585&lon=106.912254&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
+
+        request
+            .then(response => response.json())
+            .then(data => {
+                console.log("Using “Chonqing” for weather data");
+                let temperatureElements = document.getElementsByClassName("weather-temperature");
+                temperatureElements[0].textContent =
+                    Math.floor(data["main"]["temp_max"]) + "°";
+                temperatureElements[1].textContent =
+                    Math.floor(data["main"]["temp_min"]) + "°";
+            });
     }
     
     function getRandomArticleImage() {
@@ -149,43 +178,18 @@ document.addEventListener("DOMContentLoaded", function() {
     function setWeather() {
         // Use the user's current location to get the current temperature,
         // otherwise assume they live in London
-
         if (navigator.geolocation) {
-            setWeatherPosition();
+            navigator.geolocation.getCurrentPosition(function (position) {
+                console.log("Geolocation accepted");
+                geoLocationAccepted(position);
+            }, function (error) {
+                console.log("Geolocation blocked");
+                geoLocationBlocked();
+            });
         } else {
-            let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat=51.507351&lon=-0.127758&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
-
-            request
-                .then(response => response.json())
-                .then(data => {
-                    let temperatureElements = document.getElementsByClassName("weather-temperature");
-                    temperatureElements[0].textContent =
-                        Math.floor(data["main"]["temp_max"]) + "°";
-                    temperatureElements[1].textContent =
-                        Math.floor(data["main"]["temp_min"]) + "°";
-                });
+            console.log("Geolocation unavailable");
+            geoLocationBlocked();
         }
-    }
-
-    function setWeatherPosition() {
-        navigator.geolocation.getCurrentPosition(function (position) {
-            let latitude = position.coords.latitude;
-            let longitude = position.coords.longitude;
-
-            let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat="
-                + latitude + "&lon=" + longitude
-                + "&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
-
-            request
-                .then(response => response.json())
-                .then(data => {
-                    let temperatureElements = document.getElementsByClassName("weather-temperature");
-                    temperatureElements[0].textContent =
-                        Math.floor(data["main"]["temp_max"]) + "°";
-                    temperatureElements[1].textContent =
-                        Math.floor(data["main"]["temp_min"]) + "°";
-                });
-        });
     }
 
     // Change to toggle using rotation instead of an immediate change
