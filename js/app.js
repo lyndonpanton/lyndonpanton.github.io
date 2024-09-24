@@ -169,16 +169,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function setWeatherPosition() {
         navigator.geolocation.getCurrentPosition(function (position) {
-           let latitude = position.coords.latitude;
-           let longitude = position.coords.longitude;
-
-           console.log(latitude, longitude);
+            let latitude = position.coords.latitude;
+            let longitude = position.coords.longitude;
 
             let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat="
                 + latitude + "&lon=" + longitude
                 + "&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
 
-            request.then(response => response.json())
+            request
+                .then(response => response.json())
                 .then(data => {
                     let temperatureElements = document.getElementsByClassName("weather-temperature");
                     temperatureElements[0].textContent =
