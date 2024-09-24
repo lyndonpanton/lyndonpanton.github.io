@@ -59,6 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     }
+
+    function getCurrentPosition(position) {
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+
+        return [latitude, longitude];
+    }
     
     function getRandomArticleImage() {
         let image;
@@ -140,17 +147,46 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function setWeather() {
-        let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat=51.600349&lon=0.019800&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
+        // Use the user's current location to get the current temperature,
+        // otherwise assume they live in London
 
-        request
-            .then(response => response.json())
-            .then(data => {
-                let temperatureElements = document.getElementsByClassName("weather-temperature");
-                temperatureElements[0].textContent =
-                    Math.floor(data["main"]["temp_max"]) + "°";
-                temperatureElements[1].textContent =
-                    Math.floor(data["main"]["temp_min"]) + "°";
-            });
+        if (navigator.geolocation) {
+            setWeatherPosition();
+        } else {
+            let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat=51.507351&lon=-0.127758&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
+
+            request
+                .then(response => response.json())
+                .then(data => {
+                    let temperatureElements = document.getElementsByClassName("weather-temperature");
+                    temperatureElements[0].textContent =
+                        Math.floor(data["main"]["temp_max"]) + "°";
+                    temperatureElements[1].textContent =
+                        Math.floor(data["main"]["temp_min"]) + "°";
+                });
+        }
+    }
+
+    function setWeatherPosition() {
+        navigator.geolocation.getCurrentPosition(function (position) {
+           let latitude = position.coords.latitude;
+           let longitude = position.coords.longitude;
+
+           console.log(latitude, longitude);
+
+            let request = fetch("https://api.openweathermap.org/data/2.5/weather?lat="
+                + latitude + "&lon=" + longitude
+                + "&appid=938c18d749049bb86f26fddf506aebf3&units=metric");
+
+            request.then(response => response.json())
+                .then(data => {
+                    let temperatureElements = document.getElementsByClassName("weather-temperature");
+                    temperatureElements[0].textContent =
+                        Math.floor(data["main"]["temp_max"]) + "°";
+                    temperatureElements[1].textContent =
+                        Math.floor(data["main"]["temp_min"]) + "°";
+                });
+        });
     }
 
     // Change to toggle using rotation instead of an immediate change
