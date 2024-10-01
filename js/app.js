@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // setMainArticleImage();
     setOtherArticleImages();
     setPodcastsArticleImages();
+    setSportsArticleImages();
     setWeather();
     // setRandomArticleImages();
 
@@ -173,6 +174,15 @@ document.addEventListener("DOMContentLoaded", function() {
             //         podcastArticleImages[i].style.background = data.urls.regular;
             //         console.log(data.urls.regular);
             // });
+        }
+    }
+
+    function setSportsArticleImages() {
+        let articles = document.getElementsByClassName("sports-article-image");
+
+        for (let i = 0; i < articles.length; i++) {
+            // articles[i].style.backgroundImage = "url('" + articles[i].src + "')";
+            articles[i].style.backgroundImage = "url('./img/sports-image-0" + (i + 1) + ".jpg";
         }
     }
 

@@ -25,6 +25,13 @@ A personal repository made to host the homepage for Lyndon Panton's GitHub page.
 - [Article profile pictures](https://randomuser.me/photos)
 - [Article background](https://images.unsplash.com/photo-1719937206930-84afb0daf141)
 
+#### Sports
+
+- [Baseball article](https://unsplash.com/photos/person-holding-two-baseballs-3k_FcShH0jY)
+- [Tennis article](https://unsplash.com/photos/person-wearing-pair-of-white-low-top-sneakers-while-holding-wilson-tennis-racket-4R9CcBdQTEg)
+- [Basketball article](https://unsplash.com/photos/spalding-basketball-in-court-Gl0jBJJTDWs)
+- [Bowling article](https://unsplash.com/photos/person-holding-bowling-ball-facing-bowling-pins-cYkmWlq_vYM)
+
 ### Videos
 
 - [Bird video 1](https://pixabay.com/videos/bird-daurian-redstart-beak-feathers-202693/)
