@@ -34,6 +34,23 @@ A personal repository made to host the homepage for Lyndon Panton's GitHub page.
 
 #### Elections
 
+- [Article 1](https://unsplash.com/photos/blue-and-white-dolphin-illustration-49ybMyLB7HM)
+- [Article 2](https://unsplash.com/photos/blue-and-white-book-on-white-table-_c3NhwAGB98)
+- [Article 3](https://unsplash.com/photos/a-man-sitting-in-a-chair-reading-a-newspaper-4ERLZM8fAis)
+- [Article 4](https://unsplash.com/photos/a-statue-of-a-man-with-a-cane-in-front-of-a-clock-tower-3FslzjqYdrM)
+- [Article 5](https://unsplash.com/photos/two-buttons-with-the-words-vote-and-the-american-flag-TGxarF-ZBN8)
+- [Article 6](https://unsplash.com/photos/man-in-white-and-black-stripe-button-up-shirt-R-9N_W79WTo)
+- [Article 7](https://unsplash.com/photos/person-holding-green-and-white-round-plastic-container-i8TSxlBSuvs)
+- [Article 8](https://unsplash.com/photos/person-standing-near-table-IBWJsMObnnU)
+- [Article 9](https://unsplash.com/photos/person-holding-white-machine-on-top-of-white-table-5CoOYSxILSw)
+- [Article 10](https://unsplash.com/photos/white-concrete-structure-9wXvgLMDetA)
+- [Article 11](https://unsplash.com/photos/a-crowd-of-people-standing-around-a-statue-holding-signs-XCIhebANVE8)
+- [Article 12](https://unsplash.com/photos/a-black-and-white-photo-of-a-trash-can-149XStct8B0)
+- [Article 13](https://unsplash.com/photos/brown-cardboard-boxes-on-brown-wooden-shelf-_BsSxZRU75Q)
+- [Article 14](https://unsplash.com/photos/people-gathering-near-brown-building-during-daytime-doIaa7fjvzI)
+- [Article 15](https://unsplash.com/photos/man-in-black-and-gray-plaid-dress-shirt-sitting-beside-woman-in-blue-t-shirt-jcBd3aSCkKc)
+- [Article 16](https://unsplash.com/photos/man-in-blue-suit-jacket-standing-near-people-uruNsgg5j-o)
+
 ### Videos
 
 - [Bird video 1](https://pixabay.com/videos/bird-daurian-redstart-beak-feathers-202693/)
