@@ -33,6 +33,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let temperatureMaximum =
         document.getElementById("weather-temperature-high");
 
+    // setMainArticleImage();
+    setOtherArticleImages();
+    setPodcastsArticleImages();
     setWeather();
     // setRandomArticleImages();
 
@@ -95,17 +98,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     Math.floor(data["main"]["temp_min"]) + "°";
             });
     }
-    
-    function getRandomArticleImage() {
-        let image;
-        fetch("https://api.unsplash.com/photos/random?client_id=0oQ2Z0zwJUIn5eqNLJWRESad5k5-bnIFdN_K74FjkfA")
-            .then(response => response.json())
-            .then(data => {
-                console.log(data.urls.regular);
-                image = data.urls.regular;
-            });
-        return image;
-    }
 
     // Use an API to get random articles
     function loadMoreArticles(button) {
@@ -149,22 +141,39 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    function setRandomArticleImages() {
+    function setMainArticleImage() {
         // All image elements should have a specific class name
-        let articleCards = document.getElementsByClassName("article-card");
-        let articleCard = articleCards[0];
-        let imageElement = articleCard.firstChild;
-        let randomArticleImage = getRandomArticleImage();
-        imageElement.src = randomArticleImage;
-        console.log(randomArticleImage);
+        let articleCardImage = document.getElementById("stories-top-other-article-image");
+        fetch("https://api.unsplash.com/photos/random?client_id=0oQ2Z0zwJUIn5eqNLJWRESad5k5-bnIFdN_K74FjkfA")
+            .then(response => response.json())
+            .then(data => {
+                console.log(articleCardImage);
+                articleCardImage.style.backgroundImage = data.urls.regular;
+                console.log(data.urls.regular);
+        });
+    }
 
-        // Loop over all image elements
-        // for (let i = 0; i < articleCards.length; i++) {
-        //     // Use getArticleImage to get the image
-        //     let imageElement = articleCards[i].firstChild;
-        //     // Set the image as the article's background url
-        //     imageElement.src = getRandomArticleImage();
-        // }
+    function setOtherArticleImages() {
+        let otherArticleImages = document.getElementsByClassName("stories-top-other-article-image");
+        console.log(otherArticleImages)
+
+        for (let i = 0; i < otherArticleImages.length; i++) {
+           console.log(otherArticleImages[i].style.backgroundImage);
+        }
+    }
+
+    function setPodcastsArticleImages() {
+        let podcastArticleImages = document.getElementsByClassName("podcasts-article-image");
+
+        for (let i = 0; i < podcastArticleImages.length; i++) {
+            // fetch("https://api.unsplash.com/photos/random?client_id=0oQ2Z0zwJUIn5eqNLJWRESad5k5-bnIFdN_K74FjkfA")
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         podcastArticleImages[i].style.backgroundImage = data.urls.regular;
+            //         podcastArticleImages[i].style.background = data.urls.regular;
+            //         console.log(data.urls.regular);
+            // });
+        }
     }
 
     function setTime(element) {
