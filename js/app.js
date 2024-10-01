@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let temperatureMaximum =
         document.getElementById("weather-temperature-high");
 
+    setElectionArticleImages();
     setMainArticleImage();
     setOtherArticleImages();
     setPodcastsArticleImages();
@@ -139,6 +140,18 @@ document.addEventListener("DOMContentLoaded", function() {
                     return "Nov";
                 case 12:
                     return "Dec";
+        }
+    }
+
+    function setElectionArticleImages() {
+        let articles = document.getElementsByClassName("election-article-image");
+
+        for (let i = 0; i < articles.length; i++) {
+            if (i < 9) {
+                articles[i].style.backgroundImage = "url('./img/elections-image-0" + (i + 1) + ".jpg')";
+            } else {
+                articles[i].style.backgroundImage = "url('./img/elections-image-" + (i + 1) + ".jpg')";
+            }
         }
     }
     

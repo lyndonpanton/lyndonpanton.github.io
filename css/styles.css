@@ -263,14 +263,6 @@ footer > section {
     margin-right: 0;
 }
 
-.election-article-image {
-    width: 100%;
-    height: 45%;
-    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
-    background-size: cover;
-    background-position: center;
-}
-
 .election-article-category {
     color: darkblue;
     font-size: 0.9em;
@@ -291,6 +283,8 @@ footer > section {
 }
 
 .election-article-image {
+    width: 100%;
+    height: 45%;
     background-size: 100%;
     background-position: center;
     background-clip: border-box;

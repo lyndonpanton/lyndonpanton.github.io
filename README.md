@@ -32,6 +32,8 @@ A personal repository made to host the homepage for Lyndon Panton's GitHub page.
 - [Basketball article](https://unsplash.com/photos/spalding-basketball-in-court-Gl0jBJJTDWs)
 - [Bowling article](https://unsplash.com/photos/person-holding-bowling-ball-facing-bowling-pins-cYkmWlq_vYM)
 
+#### Elections
+
 ### Videos
 
 - [Bird video 1](https://pixabay.com/videos/bird-daurian-redstart-beak-feathers-202693/)
