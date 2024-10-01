@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let temperatureMaximum =
         document.getElementById("weather-temperature-high");
 
-    // setMainArticleImage();
+    setMainArticleImage();
     setOtherArticleImages();
     setPodcastsArticleImages();
     setSportsArticleImages();
@@ -144,13 +144,14 @@ document.addEventListener("DOMContentLoaded", function() {
     
     function setMainArticleImage() {
         // All image elements should have a specific class name
-        let articleCardImage = document.getElementById("stories-top-other-article-image");
-        fetch("https://api.unsplash.com/photos/random?client_id=0oQ2Z0zwJUIn5eqNLJWRESad5k5-bnIFdN_K74FjkfA")
+        let articleCardImage = document.getElementById("stories-top-primary-article-image");
+        fetch("https://api.unsplash.com/photos/random?client_id=0oQ2Z0zwJUIn5eqNLJWRESad5k5-bnIFdN_K74FjkfA&topic=scam,software")
             .then(response => response.json())
             .then(data => {
                 console.log(articleCardImage);
-                articleCardImage.style.backgroundImage = data.urls.regular;
+                articleCardImage.style.backgroundImage = "url('" + data.urls.regular + "')";
                 console.log(data.urls.regular);
+                // "url('" + articles[i].src + "')";
         });
     }
 
@@ -181,7 +182,6 @@ document.addEventListener("DOMContentLoaded", function() {
         let articles = document.getElementsByClassName("sports-article-image");
 
         for (let i = 0; i < articles.length; i++) {
-            // articles[i].style.backgroundImage = "url('" + articles[i].src + "')";
             articles[i].style.backgroundImage = "url('./img/sports-image-0" + (i + 1) + ".jpg";
         }
     }
