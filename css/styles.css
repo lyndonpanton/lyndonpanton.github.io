@@ -523,6 +523,66 @@ footer > section {
     border-right: none;
 }
 
+.sports-article {
+    flex-basis: 100%;
+
+    box-sizing: border-box;
+    margin: auto 15px;
+    height: 350px;
+}
+
+.sports-article:first-of-type {
+    margin-left: 0;
+}
+
+.sports-article:hover > .sports-article-image {
+    background-size: 110%;
+
+    transition: background-size 0.25s;
+}
+
+.sports-article:last-of-type {
+    margin-right: 0;
+}
+
+.sports-article-category {
+    color: darkblue;
+}
+
+.sports-article-content {
+    margin: 0 10px;
+    padding: 25px 10px;
+}
+
+.sports-article-content > * {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.sports-article-description {
+    font-size: 1.2em;
+}
+
+.sports-article-image {
+    width: 100%;
+    height: 45%;
+    background-image: url("https://images.unsplash.com/photo-1719937206930-84afb0daf141");
+    background-size: 100%;
+    background-position: center;
+
+    transition: background-size 0.25s;
+}
+
+.sports-article-tags {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.sports-article-tags > * {
+    margin: 0 0 0 5px;
+}
+
 .stories-elections-articles-group {
     display: flex;
     flex-direction: row;
@@ -968,6 +1028,15 @@ footer > section {
     transition: color 0.5s;
 
     color: #FF0000;
+}
+
+#sports-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 45px 0;
+    padding: 0;
 }
 
 #stories-top-primary-article-description {
