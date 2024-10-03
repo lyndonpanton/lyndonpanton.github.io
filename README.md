@@ -25,6 +25,12 @@ A personal repository made to host the homepage for Lyndon Panton's GitHub page.
 - [Article profile pictures](https://randomuser.me/photos)
 - [Article background](https://images.unsplash.com/photo-1719937206930-84afb0daf141)
 
+#### Features
+
+- [Gaming article](https://unsplash.com/photos/woman-in-white-robe-sitting-on-couch-dhrVciddsqc)
+- [RSV article](https://unsplash.com/photos/a-group-of-blue-and-green-cells-on-a-black-surface-bh57ZKDa07g)
+- [Astronaut article](https://unsplash.com/photos/astronaut-standing-on-gray-sand-e5eDHbmHprg)
+
 #### Sports
 
 - [Baseball article](https://unsplash.com/photos/person-holding-two-baseballs-3k_FcShH0jY)

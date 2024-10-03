@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("weather-temperature-high");
 
     setElectionArticleImages();
+    setFeaturesArticleImages();
     setMainArticleImage();
     setOtherArticleImages();
     setPodcastsArticleImages();
@@ -153,6 +154,15 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 articles[i].style.backgroundImage = "url('./img/elections-image-" + (i + 1) + ".jpg')";
             }
+        }
+    }
+
+    function setFeaturesArticleImages() {
+        let articles = document.getElementsByClassName("feature-article");
+
+        for (let i = 0; i < articles.length; i++) {
+            articles[i].style.backgroundImage =
+                "url('./img/features-image-0" + (i + 1) + ".jpg')";
         }
     }
     
