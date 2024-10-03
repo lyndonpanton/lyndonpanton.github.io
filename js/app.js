@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setOtherArticleImages();
     setPodcastsArticleImages();
     setSportsArticleImages();
+    setTopStoriesArticleImages();
     setWeather();
     // setRandomArticleImages();
 
@@ -205,6 +206,23 @@ document.addEventListener("DOMContentLoaded", function() {
             date.getDate()
             + " "
             + monthToText(date.getMonth() + 1);
+    }
+
+    function setTopStoriesArticleImages() {
+        let articles = document.getElementsByClassName("stories-top-other-article-image");
+        console.log(articles.length);
+
+        for (let i = 0; i < articles.length; i++) {
+            if (i < 8) {
+                articles[i].style.backgroundImage =
+                    "url('./img/top-stories-image-0" + (i + 2) + ".jpg')";
+                console.log(i);
+            } else {
+                articles[i].style.backgroundImage =
+                    "url('./img/top-stories-image-" + (i + 2) + ".jpg')";
+                console.log(i + 2);
+            }
+        }
     }
 
     function setWeather() {
