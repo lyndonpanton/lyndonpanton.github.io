@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let temperatureMaximum =
         document.getElementById("weather-temperature-high");
 
+    setAroundTheWorldArticleImages();
     setClimateArticleImages();
     setElectionArticleImages();
     setFeaturesArticleImages();
@@ -144,6 +145,16 @@ document.addEventListener("DOMContentLoaded", function() {
                     return "Nov";
                 case 12:
                     return "Dec";
+        }
+    }
+
+    function setAroundTheWorldArticleImages() {
+        let articleImages =
+            document.getElementsByClassName("around-article");
+
+        for (let i = 0; i < articleImages.length; i++) {
+            articleImages[i].style.backgroundImage =
+                "url('./img/around-image-0" + (i + 1) + ".jpg')";
         }
     }
 
