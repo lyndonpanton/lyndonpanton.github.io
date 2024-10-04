@@ -220,16 +220,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function setPodcastsArticleImages() {
-        let podcastArticleImages = document.getElementsByClassName("podcasts-article-image");
+        let articleImages = document.getElementsByClassName("podcasts-article-image");
 
-        for (let i = 0; i < podcastArticleImages.length; i++) {
-            // fetch("https://api.unsplash.com/photos/random?client_id=0oQ2Z0zwJUIn5eqNLJWRESad5k5-bnIFdN_K74FjkfA")
-            //     .then(response => response.json())
-            //     .then(data => {
-            //         podcastArticleImages[i].style.backgroundImage = data.urls.regular;
-            //         podcastArticleImages[i].style.background = data.urls.regular;
-            //         console.log(data.urls.regular);
-            // });
+        for (let i = 0; i < articleImages.length; i++) {
+            articleImages[i].style.backgroundImage =
+                "url('./img/podcast-image-0" + (i + 1) + ".jpg')"
         }
     }
 
