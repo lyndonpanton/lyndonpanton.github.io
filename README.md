@@ -25,6 +25,12 @@ A personal repository made to host the homepage for Lyndon Panton's GitHub page.
 - [Article profile pictures](https://randomuser.me/photos)
 - [Article background](https://images.unsplash.com/photo-1719937206930-84afb0daf141)
 
+#### Around the World
+
+- [Article 1](https://unsplash.com/photos/people-playing-soccer-on-green-field-during-daytime-xyDkHkvDYp4)
+- [Article 2](https://unsplash.com/photos/person-playing-guitar-2UuhMZEChdc)
+- [Article 3](https://unsplash.com/photos/a-table-with-a-sign-and-a-pen-on-it-aOOIc6LYv20)
+
 #### Climate
 
 - [Article 1](https://unsplash.com/photos/white-cruise-ship-F5oj6SYoarc)
