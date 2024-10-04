@@ -36,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
     setElectionArticleImages();
     setFeaturesArticleImages();
     setMainArticleImage();
-    setOtherArticleImages();
+    setMoreTopStoriesArticleImages();
+    // setOtherArticleImages();
     setPodcastsArticleImages();
     setSportsArticleImages();
     setTopStoriesArticleImages();
@@ -179,9 +180,22 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    function setMoreTopStoriesArticleImages() {
+        let articleImages = document.getElementsByClassName("stories-more-article-image");
+
+        for (let i = 0; i < articleImages.length; i++) {
+            if (i < 9) {
+                articleImages[i].style.backgroundImage =
+                    "url('./img/more-top-stories-image-0" + (i + 1) + ".jpg')";
+            } else {
+                articleImages[i].style.backgroundImage =
+                    "url('./img/more-top-stories-image-" + (i + 1) + ".jpg')";
+            }
+        }
+    }
+
     function setOtherArticleImages() {
         let otherArticleImages = document.getElementsByClassName("stories-top-other-article-image");
-        console.log(otherArticleImages)
 
         for (let i = 0; i < otherArticleImages.length; i++) {
            console.log(otherArticleImages[i].style.backgroundImage);
