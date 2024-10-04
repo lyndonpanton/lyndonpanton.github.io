@@ -27,8 +27,8 @@ A personal repository made to host the homepage for Lyndon Panton's GitHub page.
 
 #### Around the World
 
-- [Article 1](https://unsplash.com/photos/people-playing-soccer-on-green-field-during-daytime-xyDkHkvDYp4)
-- [Article 2](https://unsplash.com/photos/person-playing-guitar-2UuhMZEChdc)
+- [Article 1](https://unsplash.com/photos/person-holding-baseball-ball-in-black-leather-baseball-mitt-qegSxvH9U9Y)
+- [Article 2](https://unsplash.com/photos/man-playing-with-electric-guitar-XUXx8X4znHU)
 - [Article 3](https://unsplash.com/photos/a-table-with-a-sign-and-a-pen-on-it-aOOIc6LYv20)
 
 #### Climate
