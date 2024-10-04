@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let temperatureMaximum =
         document.getElementById("weather-temperature-high");
 
+    setClimateArticleImages();
     setElectionArticleImages();
     setFeaturesArticleImages();
     setMainArticleImage();
@@ -146,8 +147,24 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    function setClimateArticleImages() {
+        let articleImages =
+            document.getElementsByClassName("climate-article-image");
+
+        for (let i = 0; i < articleImages.length; i++) {
+            if (i < 9) {
+                articleImages[i].style.backgroundImage =
+                    "url('./img/climate-image-0" + (i + 1) + ".jpg')";
+            } else {
+                articleImages[i].style.backgroundImage =
+                    "url('./img/climate-image-" + (i + 1) + ".jpg')";
+            }
+        }
+    }
+
     function setElectionArticleImages() {
-        let articles = document.getElementsByClassName("election-article-image");
+        let articles =
+            document.getElementsByClassName("election-article-image");
 
         for (let i = 0; i < articles.length; i++) {
             if (i < 9) {
