@@ -25,6 +25,25 @@ A personal repository made to host the homepage for Lyndon Panton's GitHub page.
 - [Article profile pictures](https://randomuser.me/photos)
 - [Article background](https://images.unsplash.com/photo-1719937206930-84afb0daf141)
 
+#### Climate
+
+- [Article 1](https://unsplash.com/photos/white-cruise-ship-F5oj6SYoarc)
+- [Article 2](https://unsplash.com/photos/a-bench-with-a-sign-on-it-Na-lkXnIZro)
+- [Article 3](https://unsplash.com/photos/multicolored-abstract-painting-QwoNAhbmLLo)
+- [Article 4](https://unsplash.com/photos/green-plant-on-brown-pot-S6ieGQAD5pU)
+- [Article 5](https://unsplash.com/photos/white-boat-in-between-rocky-mountains-sydwCr54rf0)
+- [Article 6](https://unsplash.com/photos/internet-led-signage-beside-building-near-buildings-2m71l9fA6mg)
+- [Article 7](https://unsplash.com/photos/a-building-with-a-sign-that-says-cut-above-it-pTFuF6KeEIo)
+- [Article 8](https://unsplash.com/photos/man-holding-smartphone-leaning-on-bicycle-during-daytime-zn2aUVfbUrk)
+- [Article 9](https://unsplash.com/photos/a-casino-table-with-a-lot-of-chips-on-it-V3qzwMY2ak0)
+- [Article 10](https://unsplash.com/photos/shallow-focus-photography-of-white-goat-BkvRxV4tXEY)
+- [Article 11](https://unsplash.com/photos/person-cutting-tree-trunks-gZeE8HEapXY)
+- [Article 12](https://unsplash.com/photos/grayscale-photo-of-topless-man-with-tattoo-on-his-back-NtbsSBlnMm0)
+- [Article 13](https://unsplash.com/photos/three-assorted-colored-vintage-car-on-road--vWmir7fGRM)
+- [Article 14](https://unsplash.com/photos/green-grass-and-brown-mountain-under-blue-sky-during-daytime-ZH73KUJq8jo)
+- [Article 15](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/330px-Nietzsche187a.jpg)
+- [Article 16](https://unsplash.com/photos/person-in-black-long-sleeve-shirt-using-macbook-pro-em5w9_xj3uU)
+
 #### Features
 
 - [Gaming article](https://unsplash.com/photos/woman-in-white-robe-sitting-on-couch-dhrVciddsqc)
