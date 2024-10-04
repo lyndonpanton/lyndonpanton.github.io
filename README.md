@@ -91,6 +91,13 @@ A personal repository made to host the homepage for Lyndon Panton's GitHub page.
 - [Article 11](https://unsplash.com/photos/grayscale-photo-of-city-CzsHs8A87Y0)
 - [Article 12](https://unsplash.com/photos/two-people-holding-hands-with-handcuffs-on-them-8SbsC64jfIM)
 
+#### Podcast
+
+- [Article 1](https://unsplash.com/photos/person-standing-near-led-sign-XIVDN9cxOVc)
+- [Article 2](https://unsplash.com/photos/gray-pebbles-near-river-during-daytime--e_njRV9hRE)
+- [Article 3](https://unsplash.com/photos/woman-in-blue-and-brown-dress-holding-a-stick-_iVTRQStm8E)
+- [Article 4](https://unsplash.com/photos/silhouette-of-mountain-during-sunset-tA1z4nIB6as)
+
 #### Top Stories
 
 - [Article 1](): Uses an API
