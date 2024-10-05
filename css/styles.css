@@ -1,3 +1,8 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -38,7 +43,6 @@ footer > section {
 .analysis-card:last-of-type {
     margin-right: 0;
 }
-
 
 .analysis-card-author {
     margin: 20px 0 0;
