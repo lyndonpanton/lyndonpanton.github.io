@@ -25,7 +25,11 @@
             <div id="blank-space-top"></div>
             <div id="header-top">
                 <div id="header-top-left">
-                    <h1 id="title">News Website</h1>
+                    <h1 id="title">
+                        <?php
+                            echo "News Website";
+                        ?>
+                    </h1>
                 </div>
                 <div id="header-top-right">
                     <div id="weather">
